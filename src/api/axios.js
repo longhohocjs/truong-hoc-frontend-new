@@ -5,7 +5,7 @@ const axiosClient = axios.create({
   // Sử dụng biến môi trường giúp linh hoạt khi triển khai (Production/Development)
   baseURL:
     import.meta.env.VITE_API_URL ||
-    "https://truong-hoc-backend.onrender.com/api", // Đảm bảo URL này khớp với URL Render cấp cho bạn
+    "https://truong-hoc-backend.onrender.com/api",
   headers: {
     "Content-Type": "application/json",
     Accept: "application/json",
