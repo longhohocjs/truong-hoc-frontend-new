@@ -3,7 +3,9 @@ import toast from "react-hot-toast";
 
 const axiosClient = axios.create({
   // Sử dụng biến môi trường giúp linh hoạt khi triển khai (Production/Development)
-  baseURL: import.meta.env.VITE_API_URL || "http://localhost:8000/api",
+  baseURL:
+    import.meta.env.VITE_API_URL ||
+    /*"http://localhost:8000/api"*/ "https://truong-hoc-backend.onrender.com",
   headers: {
     "Content-Type": "application/json",
     Accept: "application/json",
