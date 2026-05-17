@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import { useAuth } from "@/context/AuthContext";
 import axiosClient from "@/api/axios";
+import ChatBox from "@/components/ChatBox";
 import {
   LayoutDashboard,
   Users,
@@ -413,6 +414,8 @@ const MainLayout = () => {
           </div>
         </main>
       </div>
+      {/* Ẩn ChatBox trên trang ADMIN (chỉ SV & GV) */}
+      {user && !user?.role?.toLowerCase().includes("admin") && <ChatBox />}
     </div>
   );
 };
