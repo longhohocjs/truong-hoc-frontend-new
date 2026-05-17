@@ -42,9 +42,7 @@ const Login = () => {
       <div className="max-w-md w-full bg-white rounded-2xl shadow-2xl overflow-hidden">
         <div className="p-8">
           <div className="text-center mb-10">
-            <h2 className="text-3xl font-extrabold text-gray-900">
-              EDU-PORTAL
-            </h2>
+            <h2 className="text-3xl font-extrabold text-gray-900">EDU-SYS</h2>
             <p className="mt-2 text-sm text-gray-600">
               Hệ thống Quản lý Đào tạo - Đăng nhập để tiếp tục
             </p>
